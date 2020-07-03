@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <script src="../../build/trendgraph.js"></script>
+</head>
+
+<body>
+    <div id="scatterPlot"></div>
+
+    <script>
+        trendgraph.graph()
+            .urlParams("isoc_r_iuse_i?geoLevel=nuts2&precision=1&lastTimePeriod=5&unit=PC_IND&indic_is=I_IU3") //https://ec.europa.eu/eurostat/web/json-and-unicode-web-services/getting-started/query-builder
+            // .nutsLevel(2)
+            .region("BE10") //brussels NUTS2
+            .build()
+
+    </script>
+</body>
+
+</html>
